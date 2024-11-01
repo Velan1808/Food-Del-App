@@ -22,7 +22,6 @@ const StoreContextProvider = (props) =>{
 
 // fetch the cartData
       const getCartData = async(token) =>{
-        console.log(token)
         const response = await axios.get(`${URL}/api/cart/get`,{ headers: { Authorization: `Bearer ${token}` }})
         setCartItems(response.data.cartData)
     } 
