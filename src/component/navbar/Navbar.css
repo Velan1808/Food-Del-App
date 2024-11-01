@@ -1,0 +1,170 @@
+.navbar{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo{
+    width: 150px;
+}
+.navbar .navbar-menu{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    color: rgb(77, 77, 77);
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.navbar .navbar-right{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.navbar .navbar-right img{
+    padding-top: 10px;
+    height: 30px;
+    cursor: pointer;
+}
+.navbar-search-icon{
+    position: relative;
+}
+.navbar .navbar-right .dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: tomato;
+    position: absolute;
+    right: -8px;
+    top: 2px;
+
+}
+.navbar button{
+    padding:1px 25px;
+    border-radius: 50px;
+    border: 1px solid rgb(77, 77, 77);
+    background-color: transparent;
+    font-size: 18px;
+    transition: 0.4s;
+}
+.navbar button:hover{
+    background-color: rgb(237, 204, 198);
+    cursor: pointer;
+}
+.active{
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(34, 30, 57);
+}
+
+.navbar-profile{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+.navbar-profile img{
+    width: 22px;
+    cursor: pointer;
+    z-index: 1;
+}
+.navbar-profie-dropdown{
+    display: none;
+}
+.navbar-profile:hover .navbar-profie-dropdown{
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     position: absolute;
+     color: black;
+     background-color: rgb(255, 252, 252);
+     border: none;
+     padding: 12px 25px;
+     z-index: 2;
+     margin-top: 32px;
+     border-radius: 3px;
+     list-style: none;
+     right: 0;
+     outline: 1px solid tomato;
+}
+.navbarlist{
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    padding: 2px;
+    align-items: center;
+    cursor: pointer;
+}
+.navbarlist span{
+    padding-top: 8px;
+}
+.navbarlist span:hover{
+    color: tomato;
+}
+
+@media screen and (max-width:1050px) and (min-width:901px){
+    .navbar .logo{
+        width: 140px;
+    }
+    .navbar .navbar-menu{
+        gap: 20px;
+        font-size: 17px;
+    }
+    .navbar .navbar-right{
+        gap: 30px;
+    }
+    .navbar .navbar-right img{
+        width: 22px;
+        height: 22px;
+    }
+    .navbar .navbar-right button{
+        padding: 8px 25px;
+    }
+}
+@media screen and (max-width:900px) and (min-width:701px){
+    .navbar .logo{
+        width: 120px;
+    }
+    .navbar .navbar-menu{
+        gap: 13px;
+        font-size: 15px;
+    }
+    .navbar .navbar-right{
+        gap: 20px;
+    }
+    .navbar .navbar-right img{
+        width: 20px;
+    }
+    .navbar .navbar-right button{
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+}
+@media (max-width:700px){
+    .navbar .navbar-menu{
+        display: none;
+    } 
+    .navbar .logo{
+        width: 110px;
+    }
+    .navbar .navbar-right {
+        gap: 20px;
+    }
+    .navbar .navbar-right img{
+        width: 16px;
+    }
+    .navbar .navbar-right button{
+        padding: 7px 10px;
+        font-size: 15px;
+    }
+}
+@media (max-width:500px){
+    .navbar .logo{
+        width: 90px;
+    }
+    .navbar button{
+        padding:1px 15px;
+        border-radius: 30px;
+        font-size: 14px;
+    }
+  }

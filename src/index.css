@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: "Work Sans", sans-serif;
+ scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+}
+.App{
+  width: 80%;
+  margin:auto auto ;
+  font-family: "Work Sans", sans-serif;
+}
+a{
+  text-decoration: none;
+}
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@media (max-width:800px){
+  .App{
+    width: 90%;
+    margin:auto auto ;
+    font-family: "Work Sans", sans-serif;
+  }
+}
+@media (max-width:500px){
+  .App{
+    width: 96%;
+    margin:auto auto ;
+    font-family: "Work Sans", sans-serif;
+  }
+}
